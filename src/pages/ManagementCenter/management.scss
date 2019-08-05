@@ -1,0 +1,79 @@
+.breadcrumb{
+  padding-bottom: 19px;
+  border-bottom:1px solid #D0D4DA;
+  color: #68707E;
+  font-size: 14px;
+  a{
+    color: #68707E;
+  }
+  span{
+    color: #417CFF;
+  }
+  .setToBack{
+    margin-top: -7px;
+  }
+}
+.list_select{
+  padding: 17px 24px;
+  background: #fff;
+  box-shadow: 0 6px 7px 0 rgba(220,220,220,0.50);
+  margin: 32px 0 18px 0;
+  strong{
+    font-size: 14px;
+    color: #292F39;
+    line-height: 34px;
+  }
+  label{
+    color: #292F39;
+    font-weight: bold;
+    font-size: 14px;
+    &.margin{
+      margin-left: 24px;
+    }
+  }
+  .selectaction{
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 24px;
+    a:first-child{
+      margin-right: 16px;
+    }
+  }
+}
+.release{
+  position: absolute;
+  top: -80px;
+  right: 0;
+  a{
+    margin-left: 20px;
+  }
+}
+// 新增职务
+.addJob{
+  background: #FFFFFF;
+  box-shadow: 0 6px 7px 0 rgba(220, 220, 220, 0.5);
+  margin-top: 32px;
+  padding: 32px 32px 169px 32px;
+}
+.treeJob{
+  border:1px solid #D0D4DA;
+  max-height: 400px;
+  width: 226px;
+  padding:10px 0 10px 10px;
+}
+// 新增管理员
+.manaddbtn a{
+  margin-bottom: 12px;
+}
+.chosemanlist span{
+  display: inline-block;
+  padding: 0px 8px;
+  line-height: 2;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -o-border-radius: 2px;
+  -ms-border-radius: 2px;
+  border: 1px solid #D0D8DF;
+  margin: 0 12px 12px 0;
+}

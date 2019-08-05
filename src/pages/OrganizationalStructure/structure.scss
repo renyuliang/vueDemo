@@ -1,0 +1,223 @@
+// 组织架构
+.systemAllNav{
+  overflow: hidden;
+  .structure_managent,.list_managent{
+    line-height: 56px;
+    border-bottom: 1px solid #E7E7E7;
+    padding: 0 20px;
+    font-size: 14px;
+    color: #292F39;
+  }
+  .structure_left{
+    width: 330px;
+    height: 852px;
+    margin-right: 17px;
+    background: #FFFFFF;
+    box-shadow: 0 6px 7px 0 rgba(220,220,220,0.50);
+    float: left;
+    .structure_managent{
+      font-weight: bold;
+      .editdopt{
+        display: inline-block;
+        width: 14px;
+        height: 13px;
+        margin-top: 22px;
+        background: url("../../assets/images/doptedit.png") no-repeat;
+      }
+    }
+    .tree{
+      padding: 20px;
+      a{
+        display: block;
+        font-size: 18px;
+        color: #292F39;
+        font-weight: bold;
+        margin-bottom: 14px;
+        i{
+          display: inline-block;
+          width: 14px;
+          height: 14px;
+          background: url("../../assets/images/companyicon.png") no-repeat;
+          margin-right: 8px;
+        }
+      }
+    }
+  }
+  .structure_right{
+    float: left;
+    width: 850px;
+    height: 852px;
+    background: #FFFFFF;
+    box-shadow: 0 6px 7px 0 rgba(220,220,220,0.50);
+    position: relative;
+    .list_managent{
+      .pull-right a{
+        color: #417CFF;
+        font-weight: bold;
+        margin-left: 32px;
+      }
+    }
+    .list_news{
+      padding: 24px 31px 0 31px;
+      overflow: hidden;
+      .news_one{
+        width: 379px;
+        height: 212px;
+        background: #F5FAFF;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+        margin:0 30px 20px 0;
+        padding: 26px;
+        float: left;
+        position: relative;
+        overflow: hidden;
+        transition: all .5s;
+        &:hover .hovershow{
+          transform: translateY(0px);
+        }
+        .setchecked{
+          position: absolute;
+          top: 10px;
+          right:10px;
+        }
+        &:nth-child(2n){
+          margin: 0 0 20px 0;
+        }
+        .one_left{
+          width: 125px;
+          height: 160px;
+          margin-right: 41px;
+          img{
+            width: 100%;
+          }
+        }
+        .one_right{
+          h6{
+            font-size: 18px;
+            margin-bottom: 18px;
+            i{
+              display: inline-block;
+              width: 14px;
+              height: 14px;
+              margin-left: 8px;
+              &.woman{
+                background: url("../../assets/images/nvwoman.png") no-repeat;
+              }
+              &.man{
+                background: url("../../assets/images/nvman.png") no-repeat;
+              }
+            }
+          }
+          p{
+            font-size: 14px;
+            margin-bottom: 12px;
+            font-weight: bold;
+            &:last-child{
+              margin-bottom: 0;
+            }
+          }
+        }
+        .hovershow{
+          line-height: 52px;
+          background: rgba(162,173,193,.9);
+          -webkit-border-radius: 0 0 4px 4px;
+          -moz-border-radius: 0 0 4px 4px;
+          border-radius: 0 0 4px 4px;
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          text-align: center;
+          transition: all .5s;
+          transform: translateY(53px);
+          a{
+            color: #fff;
+            font-size: 14px;
+            margin-left: 60px;
+            &:first-child{
+              margin-left: 0;
+            }
+          }
+        }
+      }
+    }
+    .page{
+      position: absolute;
+      right: 0;
+      left: 0;
+      bottom: 30px;
+    }
+  }
+  // 复选框
+  .setchecked,.movechecked{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    background: url("../../assets/images/check.png") no-repeat;
+    &.active{
+      background: url("../../assets/images/check_active.png") no-repeat;
+    }
+  }
+  // 查看详情
+  .search_news{
+    padding: 20px;
+    .new_left{
+      width: 125px;
+      height: 160px;
+      margin-right: 40px;
+      img{
+        width: 100%;
+      }
+    }
+    .new_right{
+      p{
+        margin-bottom: 14px;
+        font-size: 14px;
+        color: #292F39;
+        font-weight: bold;
+        &:last-child{
+          margin-bottom: 0;
+        }
+        label{
+          color: #68707E;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+  // 移动成员
+  .moveman{
+    .moveleft,.moveright{
+      height: 390px;
+      padding: 20px;
+    }
+    .moveleft{
+      h1{
+        font-size: 18px;
+        margin-bottom: 13px;
+      }
+      i.movechecked{
+        margin-right: 6px;
+        vertical-align: sub;
+      }
+      ul{
+        overflow: hidden;
+        padding-left: 40px;
+        li{
+          margin-bottom: 13px;
+          &:last-child{
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+    .movecenter{
+      text-align: center;
+      line-height: 397px;
+      border-left: 1px solid #ebeef5;
+      border-right: 1px solid #ebeef5;
+    }
+  }
+}

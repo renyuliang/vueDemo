@@ -1,0 +1,109 @@
+.breadcrumb{
+  padding-bottom: 19px;
+  border-bottom:1px solid #D0D4DA;
+  color: #68707E;
+  font-size: 14px;
+  a{
+    color: #68707E;
+  }
+  span{
+    color: #417CFF;
+  }
+  .setToBack{
+    margin-top: -7px;
+  }
+}
+.list_select{
+  padding: 17px 24px;
+  background: #fff;
+  box-shadow: 0 6px 7px 0 rgba(220,220,220,0.50);
+  margin: 32px 0 18px 0;
+  strong{
+    font-size: 14px;
+    color: #292F39;
+    line-height: 34px;
+  }
+  label{
+    color: #292F39;
+    font-weight: bold;
+    font-size: 14px;
+    &.margin{
+      margin-left: 24px;
+    }
+  }
+  .selectaction{
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 24px;
+    a:first-child{
+      margin-right: 16px;
+    }
+  }
+}
+.release{
+  position: absolute;
+  top: -80px;
+  right: 0;
+}
+/*列表详情*/
+.listinfo,.dialogPreview{
+  padding:40px 32px 120px 32px;
+  background: #fff;
+  box-shadow: 0 6px 7px 0 rgba(220,220,220,0.50);
+  margin: 32px 0 18px 0;
+  .infowpd{
+    margin-bottom: 28px;
+    font-size: 14px;
+    color: #292F39;
+    &:last-child{
+      margin-bottom: 0;
+    }
+    label{
+      display: inline-block;
+      width: 70px;
+      text-align: right;
+      margin-right: 8px;
+      &.top{
+        vertical-align: top;
+      }
+    }
+    p{
+      display: inline-block;
+      width: 1000px;
+    }
+  }
+  .infobtn{
+    margin: 70px 0 0 80px;
+    a{
+      margin-right: 24px;
+    }
+  }
+}
+/*新增迭代*/
+.addlist{
+  background: #FFFFFF;
+  box-shadow: 0 6px 7px 0 rgba(220,220,220,0.50);
+  margin-top: 32px;
+  padding: 32px 32px 169px 32px;
+  .setToBack{
+    margin-right: 24px;
+  }
+  .autogener{
+    font-size: 14px;
+    color: #3479F2;
+    margin-left: 16px;
+  }
+}
+.dialogPreview{
+  max-height: 400px;
+  padding: 0;
+  margin: 0;
+  box-shadow: none;
+  p{
+    width: 640px !important;
+  }
+  img{
+    max-width: 640px;
+  }
+}
+
