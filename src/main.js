@@ -9,10 +9,12 @@ import 'quill/dist/quill.core.css'
 import 'quill/dist/quill.snow.css'
 import 'quill/dist/quill.bubble.css'
 import 'element-ui/lib/theme-chalk/index.css'
+import $axios from './api/request'
 Vue.use(ElementUI, { size: 'small', zIndex: 3000 })
 Vue.use(VueQuillEditor)
 
 Vue.config.productionTip = false
+Vue.prototype.$axios = $axios
 
 /* eslint-disable no-new */
 new Vue({

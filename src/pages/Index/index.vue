@@ -52,8 +52,14 @@ export default {
   created: function () {
     this.queryRecords()
     this.queryApps()
+    this.load()
   },
   methods: {
+    load () {
+      this.$axios.get('/opdcApp/queryAppList').then(res => {
+        console.log(res.data)
+      })
+    },
     queryRecords () {
       let self = this
       self.recordList = []
