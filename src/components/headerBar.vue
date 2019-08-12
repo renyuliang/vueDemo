@@ -4,22 +4,8 @@
       <img src="../assets/images/logo.png" alt="">一蟹数据中心
     </div>
     <div class="header_right pull-right">
+      <NavMenu></NavMenu>
       <ul>
-        <li>
-          <router-link to="/" exact>首页</router-link>
-        </li>
-        <li>
-          <router-link to="/iterativePush">迭代推送</router-link>
-        </li>
-        <li>
-          <router-link to="/organizationalStructure">组织架构</router-link>
-        </li>
-        <li>
-          <router-link to="/applyManagement">应用管理</router-link>
-        </li>
-        <li>
-          <router-link to="/managementCenter">管理中心</router-link>
-        </li>
         <li class="lilast">
           <span class="header_user">
             <img src="../assets/images/userimg.png" alt="">
@@ -34,8 +20,10 @@
   </div>
 </template>
 <script>
+import NavMenu from "./NavMenu"
 export default {
-  name: 'headerBar'
+  name: 'headerBar',
+  components: { NavMenu }
 }
 </script>
 <style lang="scss" scoped>

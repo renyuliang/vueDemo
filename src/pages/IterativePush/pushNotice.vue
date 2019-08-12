@@ -134,15 +134,15 @@ export default {
     },
     methods: {
       initData () {
-        var _this = this
-        countNewsData().then((res) => {
-         if (res.code === 1) {
-           if (res.data) {
-            _this.appPushList = res.data
-           }
-         } else {
-         }
-       })
+       //  var _this = this
+       //  countNewsData().then((res) => {
+       //   if (res.code === 1) {
+       //     if (res.data) {
+       //      _this.appPushList = res.data
+       //     }
+       //   } else {
+       //   }
+       // })
       },
       //
       deletethis (event, id) {

@@ -1,6 +1,3 @@
-/*
-* Created by 符菲菲 on 2018/1/23
-*/
 const page = [
   {
     path: '/',
@@ -19,7 +16,7 @@ const page = [
         name: 'index',
         children: [
           {
-            path: '/',
+            path: '/iterativePush',
             meta: {title: '迭代通知'},
             component: resolve => require(['@/pages/IterativePush/pushNotice.vue'], resolve),
             name: 'pushNotice'
@@ -34,7 +31,40 @@ const page = [
             path: '/iterativePush/pushAdd',
             meta: {title: '新增发布'},
             component: resolve => require(['@/pages/IterativePush/pushAdd.vue'], resolve),
-            name: 'pushAdd'
+            name: 'pushAdd',
+            hidden: true
+          }
+        ]
+      },
+      {
+        path: '/applyManagement',
+        meta: {title: '应用管理'},
+        component: resolve => require(['@/pages/applyManagement/index.vue'], resolve),
+        name: 'index'
+      },
+      {
+        path: '/managementCenter',
+        meta: {title: '管理用心'},
+        component: resolve => require(['@/pages/managementCenter/index.vue'], resolve),
+        name: 'index',
+        children: [
+          {
+            path: '/managementCenter',
+            meta: {title: '权限管理'},
+            component: resolve => require(['@/pages/managementCenter/managementRbac.vue'], resolve),
+            name: 'managementRbac'
+          },
+          {
+            path: '/managementCenter/managementJob',
+            meta: {title: '职务管理'},
+            component: resolve => require(['@/pages/managementCenter/managementJob.vue'], resolve),
+            name: 'managementJob'
+          },
+          {
+            path: '/managementCenter/managementMan',
+            meta: {title: '管理员'},
+            component: resolve => require(['@/pages/managementCenter/managementMan.vue'], resolve),
+            name: 'managementMan'
           }
         ]
       }

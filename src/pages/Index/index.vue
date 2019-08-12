@@ -1,41 +1,9 @@
 <template>
   <div class="systemAllNav">
-    <div class="nav_topic">
-      迭代通知<em>/Update notice</em>
-      <router-link to="/iterativePush" class="pull-right addmore" v-if="showMore">查看更多</router-link>
-    </div>
-    <div class="nav_ul">
-      <ul>
-        <li v-for="item in recordList" :key="item.id">
-          <h1>{{item.updateName}}</h1>
-          <p>
-            <label>所属系统：</label>{{item.appName}}
-          </p>
-          <p>
-            <label>版本号：</label>{{item.version}}
-          </p>
-          <p>
-            <label>迭代时间：</label>{{item.updateTime}}
-            <a href="javascritp:;" class="pull-right" @click="showDetails(item.id)">点击查看</a>
-          </p>
-        </li>
-      </ul>
-    </div>
-    <div class="nav_topic">
-      应用入口<em>/Application portal</em>
-    </div>
-    <div class="nav_apply">
-      <ul>
-        <li v-for="item in appList" :key="item.id">
-          <a href="javascript:;"><img :src="item.logo" alt=""></a>
-          <p>{{item.name}}</p>
-        </li>
-      </ul>
-    </div>
+    这是首页
   </div>
 </template>
 <script>
-
 export default {
   name: 'index',
   data () {
@@ -52,7 +20,7 @@ export default {
   created: function () {
     this.queryRecords()
     this.queryApps()
-    this.load()
+    // this.load()
   },
   methods: {
     load () {
