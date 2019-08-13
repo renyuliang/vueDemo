@@ -5,13 +5,13 @@ const page = [
     children: [
       {
         path: '/',
-        meta: {title: '首页'},
+        meta: {title: '首页', icon: 'el-icon-news'},
         component: resolve => require(['@/pages/Index/index.vue'], resolve),
         name: 'index'
       },
       {
         path: '/iterativePush',
-        meta: {title: '迭代推送'},
+        meta: {title: '迭代推送', icon: 'el-icon-menu'},
         component: resolve => require(['@/pages/IterativePush/index.vue'], resolve),
         name: 'index',
         children: [
@@ -38,13 +38,13 @@ const page = [
       },
       {
         path: '/applyManagement',
-        meta: {title: '应用管理'},
+        meta: {title: '应用管理', icon: 'el-icon-printer'},
         component: resolve => require(['@/pages/applyManagement/index.vue'], resolve),
         name: 'index'
       },
       {
         path: '/managementCenter',
-        meta: {title: '管理用心'},
+        meta: {title: '管理中心', icon: 'el-icon-setting'},
         component: resolve => require(['@/pages/managementCenter/index.vue'], resolve),
         name: 'index',
         children: [

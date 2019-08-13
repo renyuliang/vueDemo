@@ -1,21 +1,26 @@
 <template>
-  <div class="header">
-    <div class="header_left pull-left">
-      <img src="../assets/images/logo.png" alt="">一蟹数据中心
+  <div>
+    <div class="header">
+      <div class="header_left pull-left">
+        <img src="../assets/images/logo.png" alt="">一蟹数据中心
+      </div>
+      <div class="header_right pull-right">
+        <ul>
+          <li class="lilast">
+            <span class="header_user">
+              <img src="../assets/images/userimg.png" alt="">
+              <a href="javascript:;">吴三金<em>系统管理员</em></a>
+            </span>
+            <span class="header_exit">
+              <a href="javascript:;">退出</a>
+            </span>
+          </li>
+        </ul>
+      </div>
     </div>
-    <div class="header_right pull-right">
-      <NavMenu></NavMenu>
-      <ul>
-        <li class="lilast">
-          <span class="header_user">
-            <img src="../assets/images/userimg.png" alt="">
-            <a href="javascript:;">吴三金<em>系统管理员</em></a>
-          </span>
-          <span class="header_exit">
-            <a href="javascript:;">退出</a>
-          </span>
-        </li>
-      </ul>
+    <div style="width: 200px;margin: auto"><!--菜单图标-->
+      <div><div class="menu-icon" @click="toggerFuc"></div></div>
+      <NavMenu :isCollapse="isCollapse" :isOpen="isOpen"></NavMenu>
     </div>
   </div>
 </template>
@@ -23,10 +28,38 @@
 import NavMenu from "./NavMenu"
 export default {
   name: 'headerBar',
-  components: { NavMenu }
+  components: { NavMenu },
+  data () {
+    return {
+      isCollapse: false,
+      isOpen: false
+    }
+  },
+  methods: {
+    toggerFuc () {
+      const vm = this
+      vm.isOpen = vm.isOpen === true ? false : true
+      setTimeout(function () {
+        vm.isCollapse = vm.isCollapse === true ? false : true
+      }, 10)
+    }
+  }
 }
 </script>
-<style lang="scss" scoped>
+<style lang="scss">
+  .el-menu--collapse{
+    transition: all .01s;
+  }
+  .menu-icon{
+    width: 30px;
+    height: 25px;
+    border-top: 5px solid #DD575C;
+    border-bottom: 5px solid #DD575C;
+    background-color: #DD575C;
+    padding: 5px 0;
+    background-clip:content-box;
+    cursor: pointer;
+  }
 .header{
   min-width: 1200px;
   height:68px;
