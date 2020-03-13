@@ -1,6 +1,7 @@
 <template>
   <div class="systemAllNav">
     这是首页
+    <init-sum :num1="12" :num2="3"></init-sum>
   </div>
 </template>
 <script>
