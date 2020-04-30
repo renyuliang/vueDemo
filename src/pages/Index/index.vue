@@ -2,6 +2,10 @@
   <div class="systemAllNav">
     这是首页
     <init-sum :num1="12" :num2="3"></init-sum>
+
+    <ryl-sum :num1="11" :num2="43"></ryl-sum>
+    <ryl-sub :num1="111" :num2="43"></ryl-sub>
+    <ryl-double :num1="4" :num2="5"></ryl-double>
   </div>
 </template>
 <script>

@@ -15,6 +15,12 @@ import $axios from './api/request'
 import initSum from 'get_sum'
 Vue.component('init-sum',initSum)
 
+//自定义组件
+import ryl from 'ryl-components'
+Vue.component('ryl-sum', ryl.sumFuntion)
+Vue.component('ryl-sub', ryl.subFuntion)
+Vue.component('ryl-double', ryl.doubleFunction)
+
 Vue.use(ElementUI, { size: 'small', zIndex: 3000 })
 Vue.use(VueQuillEditor)
 
